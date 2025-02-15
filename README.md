@@ -11,7 +11,7 @@ pnpm install
 
 2. Start the Convex development server:
 ```bash
-pnpm dlx convex dev
+pnpm convex dev
 ```
 
 3. In a new terminal, start the SvelteKit development server:
