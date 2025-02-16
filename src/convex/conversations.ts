@@ -128,3 +128,19 @@ export const addGuidanceMessage = internalMutation({
     return null;
   },
 });
+
+// Add query to list all conversations
+export const listConversations = query({
+  args: {},
+  returns: v.array(
+    v.object({
+      _id: v.id("conversations"),
+      participants: v.array(v.id("users")),
+      status: v.string(),
+      createdAt: v.number(),
+    })
+  ),
+  handler: async (ctx) => {
+    return await ctx.db.query("conversations").order("desc").collect();
+  },
+});

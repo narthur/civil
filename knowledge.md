@@ -11,6 +11,8 @@
 - Convex server: `pnpm dlx convex dev`
 - SvelteKit server: `pnpm dev`
 - Run servers in separate terminals
+- Requires PUBLIC_CONVEX_URL in `.env.local` (preferred) or `.env`
+- Get PUBLIC_CONVEX_URL from Convex dashboard when running `convex dev`
 
 ## Testing
 - Client tests: `src/**/*.svelte.{test,spec}.{js,ts}`
