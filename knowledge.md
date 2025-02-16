@@ -27,3 +27,9 @@
 - SvelteKit for frontend routing and SSR
 - Convex for backend and real-time data
 - Static adapter for deployment
+
+## Convex Integration
+- Use setupConvex in root layout with PUBLIC_CONVEX_URL
+- Use useQuery for real-time data subscriptions
+- Use useConvexClient().mutation for mutations
+- Handle loading/error states in components using query.isLoading and query.error
