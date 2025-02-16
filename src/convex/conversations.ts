@@ -135,6 +135,7 @@ export const listConversations = query({
   returns: v.array(
     v.object({
       _id: v.id("conversations"),
+      _creationTime: v.number(),
       participants: v.array(v.id("users")),
       status: v.string(),
       createdAt: v.number(),

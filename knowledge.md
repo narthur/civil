@@ -35,3 +35,5 @@
 - Use useQuery for real-time data subscriptions
 - Use useConvexClient().mutation for mutations
 - Handle loading/error states in components using query.isLoading and query.error
+- Include `_creationTime` in return type validators when querying documents
+- System fields like `_creationTime` and `_id` are automatically added by Convex
